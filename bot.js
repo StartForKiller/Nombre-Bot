@@ -10,4 +10,4 @@ const client = new klasa.Client({
     readyMessage: (client) => `${client.user.tag}, Ready to serve ${client.guilds.size} guilds and ${client.users.size} users`
 });
 
-client.login('TOKEN');
+client.login(process.env.TOKEN);
